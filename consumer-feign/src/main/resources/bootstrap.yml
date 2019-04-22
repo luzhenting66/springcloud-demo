@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      enabled: true
+      label: master
+      uri:  http://127.0.0.1:8100
+      name: application-feignconsumer-service
+      profile: dev
