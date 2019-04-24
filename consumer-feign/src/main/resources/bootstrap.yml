@@ -8,6 +8,5 @@ spring:
     config:
       enabled: true
       label: master
-      uri:  http://127.0.0.1:8100
+      uri:  http://127.0.0.1:8001
       name: application-feignconsumer-service
-      profile: dev

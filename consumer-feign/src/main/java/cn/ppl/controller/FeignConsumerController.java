@@ -3,10 +3,12 @@ package cn.ppl.controller;
 import cn.ppl.entity.User;
 import cn.ppl.feign.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.PostConstruct;
 import java.util.Random;
 
 

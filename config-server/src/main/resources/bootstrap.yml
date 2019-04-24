@@ -1,24 +1,18 @@
-#默认激活dev
 spring:
-  profiles:
-    active: dev
-
----
-server:
-  port: 8100
-spring:
-  profiles: dev
   application:
     name: config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/luzhenting66/ppl-springcloud-demo-config.git
-          searchPaths: dev
-          label: master
+          uri: https://github.com/luzhenting66/ppl-springcloud-demo-config/
+          search-paths: dev/
           username: luzhenting66
-          password: abcABC!@#123
+          passphrase: abc
+          default-label: master
+server:
+  port: 8001
+
 eureka:
   instance:
     preferIpAddress: true
